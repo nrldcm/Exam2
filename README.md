@@ -12,6 +12,17 @@ Ex. C:\Project\Exam2\Bin\Debug\Exam2.exe
 > InstallUtil.exe C:\Project\Exam2\Bin\Debug\Exam2.exe 
 - Press Enter
 
+-- Simplified: Update
+
+1. Open CMD (Administrator)
+2. Run this command 
+
+Commands for
+sc create Exam2 binPath= "..\Exam2\Bin\Debug\Exam2.exe" start= auto -- Creating Service
+sc start Exam2 -- Starting Service
+sc stop Exam2 -- Stopping Service
+sc delete Exam2 -- Deleting Service
+
 Monitoring Logs
 1. Open Windows Event Viewer
 - On the Left side of the Event Viewer Panel Click and Expand "Windows Logs"
